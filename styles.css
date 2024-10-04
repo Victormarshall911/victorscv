@@ -9,6 +9,14 @@
   margin-top: -41px;
 }
 
+header {
+  font-weight: bolder;
+}
+
+p1 {
+  font-weight: bold;
+}
+
 
 
 .facebook-icon {
@@ -101,5 +109,6 @@ section:hover {
 }
 
 .hidden {
-  display: none; /* Hide the text initially */
+  display: none; 
 }
+
