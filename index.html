@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Marshall</title>
+    <link rel="icon" href="m.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="hig"><a href="#about">About Me</a></li>
+            <li class="hig"><a href="#skills">Skills</a></li>
+            <li class="hig"><a href="#experience">Experience</a></li>
+            <li class="hig"><a href="#education">Education</a></li>
+            <li class="hig"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1></h1>
+        <img src="banner.png" alt="Description of image" class="banner-image">
+        <p>Web Developer | Software Engineer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p class="hidden">I’m a passionate web developer and software engineer based in Lagos, Nigeria. With the aim of making the world a better place, my skills include front-end technologies such as HTML, CSS, and JavaScript. I thrive on creating intuitive and engaging user experiences and have worked on projects like personal blogs and software development.
+            In my free time, I love exploring new technologies and taking some online courses. I’m always eager to learn and take on new challenges, whether it's mastering a new programming language or collaborating on innovative projects. My goal is to combine my technical skills and creativity to make a positive impact in the tech community.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="hidden">
+            <li>Web development</li>
+            <li>Software engineering</li>
+            <li>Python programming</li>
+            <li>Teamwork</li>
+            <li>Problem solving</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p class="hidden">Self-employed</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p class="hidden">Undergraduate in Computer Science</p>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <a href="mailto:marshallvictor46@gmail.com">
+            <img src="gmail-icon.png" alt="gmail" class="gmail-icon" height="55">
+        </a>
+       
+        <a href="https://www.linkedin.com/in/marshall-victor-501460213/" target="_blank">
+            <img src="linkedin-icon.png" alt="LinkedIn Profile" class="linkedin-icon" height="55">
+        </a>
+        
+        <a href="https://web.facebook.com/marshall.chuka.73" target="_blank">
+          <img src="facebook-icon.png" alt="facebook profile" class="facebook-icon" height="55">
+        </a>
+        
+        <a href="https://x.com/marshallvicto18" target="_blank">
+          <img src="x-icon.png" alt="x profile" class="x-icon" height="55">
+        </a>
+    </footer>
+
+    <script>
+        document.querySelectorAll('section h2').forEach(function(header) {
+            header.addEventListener('click', function() {
+                const content = header.nextElementSibling; // Get the paragraph or ul element
+
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden'); // Show the text
+                } else {
+                    content.classList.add('hidden'); // Hide the text
+                }
+            });
+        });
+    </script>
+</body>
+</html>
