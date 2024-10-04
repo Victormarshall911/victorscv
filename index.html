@@ -54,8 +54,16 @@
 
     <section id="experience">
         <h2>Experience</h2>
-        <p class="hidden">WhiteChop
-            Husband & Wife restaurant</p>
+        <ul class="hidden">
+            <p>I have previously worked in these Organisations </p>
+            <li>WhiteChop</li>
+            <li>Husband & Wife Restaurant</li>
+            <li>Currently self employed</li>
+        </ul>
+    </section>
+    
+        
+
     </section>
 
     <section id="education">
@@ -83,17 +91,19 @@
     </footer>
 
     <script>
-        document.querySelectorAll('section h2').forEach(function(header) {
-            header.addEventListener('click', function() {
-                const content = header.nextElementSibling; // Get the paragraph or ul element
+document.querySelectorAll('section h2').forEach(function(header) {
+    header.addEventListener('click', function() {
+        const nextElement = header.nextElementSibling; // Get the next sibling
 
-                if (content.classList.contains('hidden')) {
-                    content.classList.remove('hidden'); // Show the text
-                } else {
-                    content.classList.add('hidden'); // Hide the text
-                }
-            });
-        });
+        // Toggle visibility
+        if (nextElement.classList.contains('hidden')) {
+            nextElement.classList.remove('hidden'); // Show the content
+        } else {
+            nextElement.classList.add('hidden'); // Hide the content
+        }
+    });
+});
+
     </script>
 </body>
 </html>
